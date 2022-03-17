@@ -1,4 +1,5 @@
 #include "Motorcycle.h"
+#include <iostream>
 
 Motorcycle::Motorcycle(const std::string& n) : Vehicle(n) {}
 
@@ -13,15 +14,15 @@ void Motorcycle::tryToEvade()
     setSpeed(120);
 }
 
-void Motorcycle::setSpeed(int s)
+void Motorcycle::setSpeed(int speed)
 {
-    if( s < 90 )
+    if( speed < 90 )
     {
         //ignore the request to lower the speed
         std::cout<< name << ": uh, no.  i'm currently lane-splitting and racing" << std::endl;
     }
     else
     {
-        Vehicle::setSpeed(s);
+        Vehicle::setSpeed(speed);
     }
 }
