@@ -6,7 +6,7 @@ SemiTruck::SemiTruck(const std::string& n) : Vehicle(n)
 {
 }
 
-SemiTruck::~SemiTruck(){}
+SemiTruck::~SemiTruck() = default;
 
 void SemiTruck::pullOver()
 {
